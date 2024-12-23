@@ -12,7 +12,7 @@ public class Main {
             for (int j = 0; j <= i; j++) {
                 System.out.print((char)c);
                 c++;
-                if (c == 81) c = 65;
+                if (c == 91) c = 65;
             }
             System.out.println();
         }
