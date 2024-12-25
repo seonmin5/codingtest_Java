@@ -13,8 +13,8 @@ public class Main {
         int sum = 0;
 
         while (a > 1) {
-            a /= b;
             arr[a%b]++;
+            a /= b;
         }
 
         for (int i = 0; i < 10; i++) {
