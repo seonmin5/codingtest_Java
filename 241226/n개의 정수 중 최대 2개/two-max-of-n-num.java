@@ -20,7 +20,7 @@ public class Main {
         for (int i = 0; i < arr.length; i++) {
             if (max1 < arr[i]) {
                 max1 = arr[i];
-            } else if (max2 < arr[i] && arr[i] < max1) {
+            } else if (max2 <= arr[i] && arr[i] <= max1) {
                 max2 = arr[i];
             }
         }
