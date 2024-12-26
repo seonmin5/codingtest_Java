@@ -15,16 +15,16 @@ public class Main {
     }
 
     private static int max2(int[] arr) {
-        int max1 = arr[0];
-        int max2 = arr[1];
-        for (int i = 0; i < arr.length; i++) {
-            if (max1 < arr[i]) {
+        Integer max1 = null;
+        Integer max2 = null;
+        for (int num : arr) {
+            if (max1 == null || num > max1) {
                 max2 = max1;
-                max1 = arr[i];
-            } else if (arr[i] == max1) {
+                max1 = num;
+            } else if (num == max1) {
                 max2 = max1;
-            } else if (arr[i] > max2) {
-                max2 = arr[i];
+            } else if (max2 == null || num > max2) {
+                max2 = num;
             }
         }
         return max2;
