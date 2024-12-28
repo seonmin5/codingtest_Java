@@ -6,10 +6,12 @@ import java.util.StringTokenizer;
 public class Main {
     private static int maxResult(int arr[]) {
         int max = arr[0];
+        int count = 0;
         for (int i = 1; i < arr.length; i++) {
             if (max == arr[i]) {
                 max = -1;
-            } else if (arr[i] > max) {
+                count++;
+            } else if (arr[i] > max && count == 0) {
                 max = arr[i];
             }
         }
