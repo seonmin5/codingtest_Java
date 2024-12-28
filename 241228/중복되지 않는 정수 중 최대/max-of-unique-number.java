@@ -22,7 +22,7 @@ public class Main {
         for (int num : arr) {
             countMap.put(num, countMap.getOrDefault(num, 0)+1);
         }
-        int max = arr[0];
+        int max = Integer.MIN_VALUE;
         boolean found = false;
         for (int num : countMap.keySet()) {
             if (countMap.get(num) == 1) {
