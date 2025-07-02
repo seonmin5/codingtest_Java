@@ -11,8 +11,8 @@ public class Main {
         StringTokenizer st = new StringTokenizer(br.readLine());
         while (N-- > 0) {
             int n = Integer.parseInt(st.nextToken());
-            max = Math.max(max, n);
-            min = Math.min(min, n);
+            if (max < n) max = n;
+            if (min > n) min = n;
         }
 
         System.out.println(max * min);
